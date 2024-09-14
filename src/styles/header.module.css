@@ -1,0 +1,63 @@
+.navbar {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: transparent;
+    color: white;
+}
+
+.navbarScrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.navbarBrand {
+    font-weight: bold;
+    color: inherit;
+}
+
+.navLink {
+    color: inherit;
+}
+
+.navLink:hover {
+    color: #007bff;
+}
+
+.navbarToggler {
+    border: none;
+    outline: none;
+    color: inherit;
+    
+}
+.navbarTogglerIcon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbarScrolled .navbarTogglerIcon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbarToggler:focus {
+    box-shadow: none;
+}
+
+@media (max-width: 991px) {
+    .navbarToggler {
+        color: white;
+    }
+
+    .navLink {
+        color: white;
+    }
+
+    .navbarCollapse {
+        padding: 1rem;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.897);
+        border-radius: 0.5rem;
+    }
+
+    .navbarScrolled .navLink {
+        color: rgb(255, 255, 255);
+    }
+}
